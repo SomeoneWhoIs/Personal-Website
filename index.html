@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+    <html>
+        <head>
+            <title>About Me!</title>
+            <meta charset="utf-8">
+            <meta name="description"
+            content="I am a student and this is a webpage about me!">
+            <style>
+                li{
+                    font-family: fantasy;
+                    color:rgb(244, 54, 161);
+                    size:20px;
+                    margin:20px;
+                    letter-spacing:2px;
+                }
+                h4{
+                   font-family:cursive;
+                   font-size:25px;
+                   color:rgb(44, 68, 244);
+                   margin:20px;
+                }
+                h2{
+                    font-size:40px;
+                    font-family:cursive;
+                    color:rgb(9, 77, 201);
+                }
+                p{
+                    font-family:sans-serif;
+                    font-size:15px;
+                    color:darkblue;
+                    margin:30px;
+                }
+                body{
+                    background-color:rgb(85, 212, 255);
+                    margin:30px;
+                    border:4px;
+                    border-style:ridge;
+                    border-color:aliceblue;
+                }
+                html{
+                    background-color: navy;
+                }
+                button{
+                    background-color:lightskyblue;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+                }
+                span{
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-size:15px;
+                    color:mediumblue;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>About Me!</h2>
+            <p><strong>Hello!</strong></p>
+            <img src="images/Screen Shot 2023-01-11 at 6.42.22 PM.png"
+            width="900" height="75" alt="a random picture of me">
+            <p>My name is Gabriela and I am a high school student.
+                 This is one of my <em>first</em> webpages! I am very excited to learn how to add features to websites. </p2>
+            <p>Some of my hobbies include:</p>
+            <ol>
+                <li>Swimming</li>
+                <li>Skiing</li>
+                <li>Looking at (and making) memes</li>
+                <li>Learning how to code</li>
+                <li>Taking walks around my neighborhood</li>
+            </ol>
+            <h4>Quick Facts about me:</h4>
+            <ul>
+                <li>Age: 15</li>
+                <li>Favorite color:<span>blue</span></li>
+                <li>Favorite animal: cat</li>
+                <li>Favorite season: all of them</li>
+                <li>Siblings: 1 younger brother</li>
+            </ul>
+                <p>Here's a cool
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a></p>
+            <p>Also, here's a history of two <a href=2memes.html>memes.</a></p>
+            <p>You made it to the end!</p>
+                <p>Here's a free procrastination button:</p> 
+            <button name="button">Press me</button>
+            <script>
+                var clicks=0;
+                function onClick(){
+                    clicks+=1;
+                    document.getElementById("clicks").innerHTML=clicks;
+                };
+            </script>
+    </html>
