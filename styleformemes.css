@@ -1,0 +1,42 @@
+h1{
+    font-family:'Rampart One', cursive;
+    font-size: 45px;
+    background-color: rgb(250, 255, 255);
+    border-style:ridge;
+    border-radius: 10px;
+    border-width:3px;
+    border-color:black;
+    text-align: center;
+    margin:3px;
+}
+p{
+    letter-spacing: 1px;
+    font-size:18px;
+    font-family:'Dosis', sans-serif;
+    margin:20px;
+}
+h3{
+    font-size:30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:5px;
+}
+html{
+    background-color: rgb(8, 106, 83);
+}
+body{
+    background-color:rgb(70, 189, 252);
+    border-style: ridge;
+    border-radius:14px;
+    border-color:darkblue;
+    border-width:6px;
+    margin:15px;
+}
+small{
+    margin:25px;
+    font-family:fantasy;
+}
+li{
+    letter-spacing: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(16, 16, 68);
+}

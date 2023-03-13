@@ -5,51 +5,7 @@
             <meta charset="utf-8">
             <meta name="description"
             content="I am a student and this is a webpage about me!">
-            <style>
-                li{
-                    font-family: fantasy;
-                    color:rgb(244, 54, 161);
-                    size:20px;
-                    margin:20px;
-                    letter-spacing:2px;
-                }
-                h4{
-                   font-family:cursive;
-                   font-size:25px;
-                   color:rgb(44, 68, 244);
-                   margin:20px;
-                }
-                h2{
-                    font-size:40px;
-                    font-family:cursive;
-                    color:rgb(9, 77, 201);
-                }
-                p{
-                    font-family:sans-serif;
-                    font-size:15px;
-                    color:darkblue;
-                    margin:30px;
-                }
-                body{
-                    background-color:rgb(85, 212, 255);
-                    margin:30px;
-                    border:4px;
-                    border-style:ridge;
-                    border-color:aliceblue;
-                }
-                html{
-                    background-color: navy;
-                }
-                button{
-                    background-color:lightskyblue;
-                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-                }
-                span{
-                    font-family:Arial, Helvetica, sans-serif;
-                    font-size:15px;
-                    color:mediumblue;
-                }
-            </style>
+            <link href="styleformainpage.css" rel="stylesheet" type="text/css">
         </head>
         <body>
             <h2>About Me!</h2>
@@ -79,12 +35,21 @@
             <p>Also, here's a history of two <a href=2memes.html>memes.</a></p>
             <p>You made it to the end!</p>
                 <p>Here's a free procrastination button:</p> 
-            <button name="button">Press me</button>
-            <script>
-                var clicks=0;
-                function onClick(){
-                    clicks+=1;
-                    document.getElementById("clicks").innerHTML=clicks;
-                };
+            <button id="btn">Press me</button>
+            <div id="count"></div>
+            <small>
+                You have clicked this thing <span id="display">0</span> times.
+            </small>
+            <script> 
+                var count = 0;
+                var btn = document.getElementById("btn");
+                var disp = document.getElementById("display")
+                btn.onclick=function(){
+                    count++;
+                    disp.innerHTML=count;
+                }
+                let headingElm=document.querySelector("h1")
+                headingElm.textContent="Welcome to the best web page ever created."
+                headingElm.style.fontFamily="sans-serif"
             </script>
     </html>
